@@ -1,0 +1,18 @@
+{
+    "name": "luiz_carlos/phpvalidator",
+    "description": "'Um pacote de validacao feito completamente em php.'",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Phpvalidator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LUIZ CARLOS",
+            "email": "50230428+luizcarlosgt@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
