@@ -2,15 +2,18 @@
 
 namespace Phpvalidator\validators;
 
-class CpfValidator{
+use Phpvalidator\validators\ValidatorInterface;
+
+class CpfValidator implements ValidatorInterface{
     
-    public $cpf;
+    private $cpf;
 
     public function __construct(string $cpf){
         $this->cpf = $cpf;
     }
 
-    public function isValid() {
+    public function isValid(): bool 
+    {
 
         $this->sanitizeString();
 

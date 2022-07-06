@@ -3,7 +3,10 @@
     require "vendor/autoload.php";
 
     use Phpvalidator\validators\CpfValidator;
+    use Phpvalidator\validators\PhoneValidator;
 
-    $cpf = new CpfValidator('018.759.622.15');
+    $phone = new PhoneValidator('68992296818');
 
-    var_dump($cpf->isValid());
+    $t = preg_replace('/[0-9(\s)]/', '', '45 Im Luiz 9554');
+
+    print_r($t);
